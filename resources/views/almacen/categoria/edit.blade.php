@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-			{!!Form::model($categoria,['method'=>'PATCH','route'=>['almacen.categoria.update',$categoria->idcategoria]])!!}
+			{!!Form::model($categoria,['method'=>'PATCH','route'=>['categoria.update',$categoria->idcategoria]])!!}
             {{Form::token()}}
             <div class="form-group">
             	<label for="nombre">Nombre</label>
@@ -28,8 +28,8 @@
             	<button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
 
-			{!!Form::close()!!}		
-            
+			{!!Form::close()!!}
+
 		</div>
 	</div>
 @endsection

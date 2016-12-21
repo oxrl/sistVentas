@@ -34,7 +34,7 @@ class CategoriaController extends Controller
     {
         return view("almacen.categoria.create");
     }
-    public function store (CategoriaFormRequest $request)
+    public function store(CategoriaFormRequest $request)
     {
         $categoria=new Categoria;
         $categoria->nombre=$request->get('nombre');
