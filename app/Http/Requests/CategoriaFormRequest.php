@@ -23,8 +23,9 @@ class CategoriaFormRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
-        ];
+      return [
+          'nombre'=>'required|max:50',
+          'descripcion'=>'max:256',
+      ];
     }
 }
